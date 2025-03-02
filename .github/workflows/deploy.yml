@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # Change this to your default branch if different
+      - dev  # Change this to your default branch if different
 
 jobs:
   deploy:
