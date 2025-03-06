@@ -1,8 +1,8 @@
 ---
-title: 'First post'
-description: 'Checking to see if subroots work now'
-pubDate: 'Mar 05 2025'
-heroImage: '/blog-placeholder-3.jpg'
+title: First post to see results
+description: Checking to see if subroots work now
+pubDate: Mar 05 2025
+heroImage: /blog-placeholder-3.jpg
 ---
 
 After some research, I think the fix was that I just needed to turn on static website hosting. It was suggested to also make the S3 bucket the custom origin of the related Cloudfront distribution, but I think I already did that part. Of course, that's what this test is checking. If it works, great! If it doesn't, I'll look further into making the S3 bucket the custom origin.
