@@ -1,5 +1,5 @@
 ---
-title: Second post, it did not work
+title: It did not work
 description: I am not worried though, because as lazy as it might sound, I think I just need to wait
 pubDate: Mar 05 2025
 heroImage: /blog-placeholder-4.jpg
