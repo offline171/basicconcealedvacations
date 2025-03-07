@@ -1,7 +1,7 @@
 ---
 title: First post to see results
 description: Checking to see if subroots work now
-pubDate: Mar 05 2025
+pubDate: Mar 04 2025
 heroImage: /blog-placeholder-3.jpg
 ---
 
