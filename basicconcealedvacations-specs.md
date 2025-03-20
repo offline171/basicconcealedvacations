@@ -16,20 +16,23 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 - Session management and persistence
 
 #### Vacation Management
-- Placeholder
+- Allow contributers to add vacation sites to the website's database
+- Let users view the entire database list
+- Have each vacation site have some (minimal) information about itself
+- Bookmark vacation sites (find a short name for these)
+- Allow users to view all their bookmarked vacation sites
+- Likely mostly reuse the UI between the main vacation site list and the bookmarked one
 
 #### UI/UX Requirements
 - Responsive design for mobile and desktop devices
 - Intuitive, clean user interface
 - Dark/light mode toggle
-- Drag-and-drop functionality for task reordering
-- Keyboard shortcuts for common actions
 
 ### 2.2 Non-Functional Requirements
 
 #### Performance
 - Page load time under 2 seconds
-- Task operations (create, update, delete) should complete within 1 second
+- Bookmarks should register within 1 second (no idea if databases are realistically this fast)
 
 #### Security
 - Secure password storage (hashed and salted)
@@ -39,7 +42,7 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 
 #### Scalability
 - Support for at least 10,000 concurrent users
-- Support for at least 100,000 tasks per user
+- Support for at least 100,000 bookmarks per user
 
 #### Reliability
 - 99.9% uptime
@@ -56,7 +59,7 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 - **Form Handling**: Formik or React Hook Form
 
 ### 3.2 Backend
-- **Framework**: Node.js with Express or NestJS
+- **Framework**: Node.js with ExpressJS
 - **Authentication**: JWT (JSON Web Tokens)
 - **API Design**: RESTful API
 
@@ -75,21 +78,43 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 ### 4.1 User Model
 ```json
 {
-  "id": "UUID"
+  "id": "UUID",
+  "email": "string",
+  "password": "string (hashed)",
+  "firstName": "string",
+  "lastname": "string",
+  "createdAt": "timestamp",
+  "updatedAt": "timestamp",
+  "lastLogin": "timestamp",
+  "preferences": {
+    "theme": "string (light/dark)",
+    "emailNotifications": "boolean"
+  }
 }
 ```
 
-### 4.2 Task Model
+### 4.2 Vacation Model
 ```json
 {
-  "id": "UUID"
+  "id": "UUID",
+  "title": "string",
+  "city": "string",
+  "state": "string",
+  "description": "string",
+  "image": "PNG (or something similar idk)",
+  "createdAt": "timestamp",
+  "updatedAt": "timestamp"
 }
 ```
 
-### 4.3 Category Model
+### 4.3 Bookmark Model
 ```json
 {
-  "id": "UUID"
+  "id": "UUID",
+  "userId": "UUID (foreign key)",
+  "vacationId": "UUID (foreign key 2)",
+  "createdAt": "timestamp",
+  "updatedAt": "timestamp"
 }
 ```
 
@@ -107,16 +132,16 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 - `PUT /api/users/me` - Update current user profile
 - `PUT /api/users/me/preferences` - Update user preferences
 
-### 5.3 Task Endpoints
-- `GET /api/tasks` - Get all tasks for current user
-- `POST /api/tasks` - Create a new task
-- `GET /api/tasks/:id` - Get a specific task
-- `PUT /api/tasks/:id` - Update a task
-- `DELETE /api/tasks/:id` - Delete a task
-- `PUT /api/tasks/:id/status` - Update task status (complete/incomplete)
+### 5.3 Vacation Endpoints (only for contributers, not users)
+- `GET /api/vacations` - Get all vacations
+- `POST /api/vacations` - Create a new vacation
+- `GET /api/vacations/:id` - Get a specific vacation
+- `PUT /api/vacations/:id` - Update a vacation
+- `DELETE /api/vacations/:id` - Delete a vacation
 
-### 5.4 Category Endpoints
-- `GET /api/categories` - Get all categories for current user
-- `POST /api/categories` - Create a new category
-- `PUT /api/categories/:id` - Update a category
-- `DELETE /api/categories/:id` - Delete a category
+### 5.4 Bookmark Endpoints
+- `GET /api/bookmarks` - Get all bookmarks for current user
+- `POST /api/bookmarks` - Create a new bookmark
+- `GET /api/bookmarks/:id` - Get a specific bookmark
+- `PUT /api/bookmarks/:id` - Update a bookmark
+- `DELETE /api/bookmarks/:id` - Delete a bookmark
