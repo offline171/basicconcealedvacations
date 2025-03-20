@@ -16,12 +16,12 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 - Session management and persistence
 
 #### Vacation Management
-- Allow contributers to add vacation sites to the website's database
+- Allow contributers to add location to the website's database
 - Let users view the entire database list
-- Have each vacation site have some (minimal) information about itself
-- Bookmark vacation sites (find a short name for these)
-- Allow users to view all their bookmarked vacation sites
-- Likely mostly reuse the UI between the main vacation site list and the bookmarked one
+- Have each location have some (minimal) information about itself
+- Bookmark locations
+- Allow users to view all their bookmarked locations
+- Likely mostly reuse the UI between the main location list and the bookmarked one
 
 #### UI/UX Requirements
 - Responsive design for mobile and desktop devices
@@ -93,11 +93,12 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 }
 ```
 
-### 4.2 Vacation Model
+### 4.2 Location Model
 ```json
 {
   "id": "UUID",
   "title": "string",
+  "address": "string",
   "city": "string",
   "state": "string",
   "description": "string",
@@ -112,7 +113,7 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 {
   "id": "UUID",
   "userId": "UUID (foreign key)",
-  "vacationId": "UUID (foreign key 2)",
+  "locationId": "UUID (foreign key 2)",
   "createdAt": "timestamp",
   "updatedAt": "timestamp"
 }
@@ -132,16 +133,18 @@ Basic Concealed Vacations is a vacation viewing website that allows users to bro
 - `PUT /api/users/me` - Update current user profile
 - `PUT /api/users/me/preferences` - Update user preferences
 
-### 5.3 Vacation Endpoints (only for contributers, not users)
-- `GET /api/vacations` - Get all vacations
-- `POST /api/vacations` - Create a new vacation
-- `GET /api/vacations/:id` - Get a specific vacation
-- `PUT /api/vacations/:id` - Update a vacation
-- `DELETE /api/vacations/:id` - Delete a vacation
+### 5.3 Location Endpoints (only for contributers, not users)
+- `GET /api/locations` - Get all locations
+    - Check locations to see if they're bookmarked to be able to tell frontend to show certain locations as bookmarked
+- `POST /api/locations` - Create a new location
+- `GET /api/locations/:id` - Get a specific location
+- `PUT /api/locations/:id` - Update a location
+- `DELETE /api/locations/:id` - Delete a location
 
 ### 5.4 Bookmark Endpoints
 - `GET /api/bookmarks` - Get all bookmarks for current user
 - `POST /api/bookmarks` - Create a new bookmark
+    - (give logic to bookmarks to always check to make sure that user hasn't bookmarked the same location twice. Might pre-check or check when trying to make it)
 - `GET /api/bookmarks/:id` - Get a specific bookmark
 - `PUT /api/bookmarks/:id` - Update a bookmark
 - `DELETE /api/bookmarks/:id` - Delete a bookmark
