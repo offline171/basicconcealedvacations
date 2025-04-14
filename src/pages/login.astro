@@ -1,18 +1,17 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 ---
-
 <Layout
 	title="Login to Concealed Vacations"
 	description="Testing to see if this shows up for the /login subroot"
 	pubDate={new Date('April 12 2025')}
 	heroImage="/blog-placeholder-about.jpg"
 >
-	<p>
-		This is the placeholder login page for Concealed Vacations
-	</p>
+	<h1>
+		Please enter a username and password
+	</h1>
 
-	<form> 
+	<form method = "POST"> 
 		<label>
 			Username:
 			<input type = "text" name = "username" required />
