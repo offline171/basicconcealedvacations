@@ -1,0 +1,10 @@
+---
+title: First Month
+description: Got through the first month. Routine is starting to set in, and I'm getting comfortable in this position of responsibility
+pubDate: February 27 2026
+heroImage: /blog-placeholder-2.jpg
+---
+
+This week, as a mentor, I did slides and attendance as usual, including on Friday when most of the class was gone anyways. I also graded the last of the status updates before Tuesday's class. That said, there were very little issues when it came to people losing points, so I didn't worry too much about stressing in in the opening announcements. As a student, I worked on making the frontend of shubble connect to the backend endpoints for announcements. This included making a query to the database and making sure that it worked with the existing code that takes the announcement data and turns it into viewable elements in typescript. I also worked in EzASM to reformat code and came across an issue where one of the test in an old pull request fails, so I'll need to fix that next time.
+
+Next week, as a mentor I'll keep doing slides and attendance as usual. I'll also make sure that everyone gets their mid-semester summary done, as I've been doing when it came up in the slides. I'll be sure to make it clear to everyone that the only way you lose points on this assignment is by not submitting it, and they can submit an empty version early just to be sure they have at least one submission. As a student, I'll finish up that pull request with shubble, since it looks like my last commit has an error with it. It seems like I just need to rework where I put the useEffeect and setState functions since they don't like being applied at the same time. I'll also try to figure out what's going on with that failed test case in EzASM, since it looks like it has to do with a hardcoded value where I'm not sure what its purpose is, except that the test would pass were it not for that value.
