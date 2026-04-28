@@ -1,7 +1,7 @@
 ---
 title: Trouble in a workshop
 description: There was some confusion at a workshop I attended where the presenter thought the meeting was resheduled, but the original time was still being used on the calendar, which caused many students including myself to be confused.
-pubDate: March 3 2026
+pubDate: April 3 2026
 heroImage: /blog-placeholder-5.jpg
 ---
 
