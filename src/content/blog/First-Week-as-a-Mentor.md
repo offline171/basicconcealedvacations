@@ -1,7 +1,7 @@
 ---
 title: First week as a Mentor
 description: After a week being a mentor, these are my notes for the week and my plans for the next
-pubDate: February 6 2026
+pubDate: Feb 6 2026
 heroImage: /blog-placeholder-5.jpg
 ---
 
