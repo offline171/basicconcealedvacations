@@ -1,7 +1,7 @@
 ---
 title: Mid-Semester Commit Summary
 description: It's basically just a collection of the work I've done during the first half of this semester
-pubDate: March 13 2026
+pubDate: Mar 13 2026
 heroImage: /blog-placeholder-1.jpg
 ---
 

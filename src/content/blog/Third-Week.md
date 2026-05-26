@@ -1,7 +1,7 @@
 ---
 title: Third Week
 description: With the third week, I now have seen what it's like to grade homework from the students
-pubDate: February 20 2026
+pubDate: Feb 20 2026
 heroImage: /blog-placeholder-1.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: First Month
 description: Got through the first month. Routine is starting to set in, and I'm getting comfortable in this position of responsibility
-pubDate: February 27 2026
+pubDate: Feb 27 2026
 heroImage: /blog-placeholder-2.jpg
 ---
 

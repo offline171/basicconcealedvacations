@@ -1,7 +1,7 @@
 ---
 title: Mentorship Continued
 description: Now that I've been a mentor for two weeks, I have a better frame of reference for how the week to week will be with these responsibilities
-pubDate: February 13 2026
+pubDate: Feb 13 2026
 heroImage: /blog-placeholder-4.jpg
 ---
 
