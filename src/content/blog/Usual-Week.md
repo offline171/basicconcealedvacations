@@ -2,7 +2,7 @@
 title: Usual Week
 description: Nothing too special, guess I'm getting used to the responsibilities.
 pubDate: Mar 27 2026
-heroImage: /blog-placeholder-2.jpg
+heroImage: /blog-image-2.jpg
 ---
 
 This week, as a mentor, I did attendance and classly announcements as usual. In addition, I helped a particular student that struggled with the mid-semester summary and needed some pointers on what to change. Specifically they weren't in a coding position but rather had a physical project that they were assigned and wanted to know how to get more commits in, and I said to take more pictures of their work and commit pictures individually to help them get to the 25 commit expectancy for the final summary.

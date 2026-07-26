@@ -2,7 +2,7 @@
 title: Been a while
 description: Haven't updated this blog in quite some time
 pubDate: Mar 28 2025
-heroImage: /blog-placeholder-2.jpg
+heroImage: /blog-image-2.jpg
 ---
 
 I suppose that I mainly see this blog as somewhere I can go to quickly get some github contribution points. But I should also really be documenting what I've been doing and problems I've run into that are worth writing down how I've solved. 
