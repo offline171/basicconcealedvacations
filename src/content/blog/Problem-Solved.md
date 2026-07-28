@@ -2,7 +2,7 @@
 title: Problem Solved!
 description: I finally got to the bottom of the subroot issue
 pubDate: Mar 06 2025
-heroImage: /blog-placeholder-2.jpg
+heroImage: /blog-image-2.jpg
 ---
 
 When I first opened the dev website today, I actually found that that problem wasn't solved! I was worried that I'd need help with this and would need to wait until the 7th to fix this over the phone with my uncle, but with just a little bit of tinkering in the distribution origins tab, I figured out the issue. 

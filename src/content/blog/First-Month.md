@@ -2,7 +2,7 @@
 title: First Month
 description: Got through the first month. Routine is starting to set in, and I'm getting comfortable in this position of responsibility
 pubDate: Feb 27 2026
-heroImage: /blog-placeholder-2.jpg
+heroImage: /blog-image-2.jpg
 ---
 
 This week, as a mentor, I did slides and attendance as usual, including on Friday when most of the class was gone anyways. I also graded the last of the status updates before Tuesday's class. That said, there were very little issues when it came to people losing points, so I didn't worry too much about stressing in in the opening announcements. As a student, I worked on making the frontend of shubble connect to the backend endpoints for announcements. This included making a query to the database and making sure that it worked with the existing code that takes the announcement data and turns it into viewable elements in typescript. I also worked in EzASM to reformat code and came across an issue where one of the test in an old pull request fails, so I'll need to fix that next time.

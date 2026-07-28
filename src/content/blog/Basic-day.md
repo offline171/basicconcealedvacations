@@ -2,7 +2,7 @@
 title: Basic day
 description: Nothing special here, had to reschedule meeting so just moving on
 pubDate: Mar 10 2025
-heroImage: /blog-placeholder-2.jpg
+heroImage: /blog-image-2.jpg
 ---
 
 I was waiting until after the meeting today to start working on something but we had to reschedule so I just cobbled together some edits to get along. I probably should've done more but I just don't really have a lot of energy today for some reason. 
