@@ -2,7 +2,7 @@
 title: Doing other things
 description: Admittedly haven't looked too much at the passport docs
 pubDate: Mar 30 2025
-heroImage: /blog-placeholder-3.jpg
+heroImage: /blog-image-3.jpg
 ---
 
 This is definitely the part of the semeester that I'm being hit with the projects and tests from my classes. Some of them are just boring presentations that, while I understand that it's important to get better at giving these things, whether that be by improving my confidence or simply apathy, I also just don't enjoy them as much.

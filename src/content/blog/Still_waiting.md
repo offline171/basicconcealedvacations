@@ -2,7 +2,7 @@
 title: Still waiting
 description: It's the weekend so maybe I have to wait until business days start again
 pubDate: Jul 6 2025
-heroImage: /blog-placeholder-3.jpg
+heroImage: /blog-image-3.jpg
 ---
 
 I've completed the github education authenification process, save for the last step which is for them to actually give me the student developer pack that is supposed to come shortly afterwards. Supposedly, I can't be denied at this point, since I already sent in my application and was approved, and it's been 72 hours give or take since I submitted it. 
