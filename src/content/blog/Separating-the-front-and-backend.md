@@ -2,7 +2,7 @@
 title: Separating front and backend
 description: I tried to make a dedicated folder holding everything front end related to then make a seperate backend component
 pubDate: Mar 16 2025
-heroImage: /blog-placeholder-3.jpg
+heroImage: /blog-image-3.jpg
 ---
 
 I tried to make a dedicated folder holding everything front end related to then make a seperate backend component. It didn't work. I reverted it in desktop so it shouldn't affect the main branch or even the dev branch anymore so at least that's fine. 
